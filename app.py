@@ -6,7 +6,6 @@ VERSION = "1.0"
 def health():
     return {"status": "ok", "version": VERSION}
 
-
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         body = json.dumps(health()).encode()
