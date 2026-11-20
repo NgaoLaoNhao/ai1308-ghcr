@@ -3,7 +3,6 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 VERSION = "1.0"
 
-
 def health():
     return {"status": "ok", "version": VERSION}
 
